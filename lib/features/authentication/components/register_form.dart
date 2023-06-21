@@ -100,13 +100,8 @@ class _RegisterFormState extends State<RegisterForm> {
         btnCallbackFn: () {
           navigateViaMaterialRoute(
             context,
-            DashboardScreen(),
-            replace: true,
+            LoginScreen(),
           );
-          html.window.location.reload();
-          setState(() {
-            isLoading = false;
-          });
         });
   }
 
@@ -152,6 +147,17 @@ class _RegisterFormState extends State<RegisterForm> {
                 password: _passwordController.text,
                 fullName: _fullNameController.text);
         print(result);
+
+        print("reached here");
+
+        navigateViaMaterialRoute(
+          context,
+          DashboardScreen(),
+          replace: true,
+        );
+        html.window.location.reload();
+
+        print("and here");
 
         setState(() {
           isLoading = false;
