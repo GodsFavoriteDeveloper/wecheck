@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384693868305",
+    "project_id": "wecheckappsa",
+    "storage_bucket": "wecheckappsa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384693868305:android:7a3fb39d6e0ab223695eb0",
+        "android_client_info": {
+          "package_name": "com.example.wecheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384693868305-kpedgsa1g7venrl6dn1ggmps9rckv9ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU7V2EGCi-jGLLPnOtLs9EUQC6XVs1Jfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384693868305-kpedgsa1g7venrl6dn1ggmps9rckv9ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
