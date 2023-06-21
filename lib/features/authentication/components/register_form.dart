@@ -6,7 +6,9 @@ import 'package:wecheck/design-system/tokens.dart';
 import 'package:wecheck/features/authentication/auth_provider.dart';
 import 'package:wecheck/features/authentication/screens/login_screen.dart';
 import 'package:wecheck/features/authentication/screens/register_screen.dart';
+import 'package:wecheck/features/dashboard/dashboard_screen.dart';
 import 'package:wecheck/shared/general.dart';
+import 'dart:html' as html;
 
 class RegisterForm extends StatefulWidget {
   const RegisterForm({super.key});
@@ -98,8 +100,13 @@ class _RegisterFormState extends State<RegisterForm> {
         btnCallbackFn: () {
           navigateViaMaterialRoute(
             context,
-            LoginScreen(),
+            DashboardScreen(),
+            replace: true,
           );
+          html.window.location.reload();
+          setState(() {
+            isLoading = false;
+          });
         });
   }
 

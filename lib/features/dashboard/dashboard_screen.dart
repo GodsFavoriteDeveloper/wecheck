@@ -350,7 +350,7 @@ _pickFile(BuildContext context) async {
       presentSnackBar(
           context: context,
           message:
-              "Document Uploaded Successfully. You will receive a response vial email and SMS withen 2 weeks");
+              "Document Uploaded Successfully. You will receive a response via email and SMS within 2 weeks");
       // setState(() {
       //   isUploadingImage = false;
       // });
